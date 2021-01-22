@@ -304,6 +304,7 @@ export default class DataSheet extends PureComponent {
     if (e.isPropagationStopped && e.isPropagationStopped()) {
       return;
     }
+    return; //Duke先取消：避免直接打字進入編輯模式
     const keyCode = e.which || e.keyCode;
     const { start, end, editing } = this.getState();
     const isEditing = editing && !isEmpty(editing);
