@@ -355,7 +355,7 @@ export default class DataSheet extends PureComponent {
     }
   }
 
-  getSelectedCells(data, start, end) {
+  getSelectedCells(data, start, end) { //for 剪下使用
     let selected = [];
     range(start.i, end.i).map(row => {
       range(start.j, end.j).map(col => {
